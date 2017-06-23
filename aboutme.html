@@ -4,4 +4,11 @@
 <img src="aaliyah.jpe" style="width:200px;height:250px;">
 My name is Aaliyah, I was born on November 17. Im 16, I run track and play basketball. My favorite color is red and I love to listen to music, and like to go shopping.
 <p><font size="15" color="red">My name is Aaliyah, I was born on November 17. Im 16, I run track and play basketball. My favorite color is red and I love to listen to music, and like to go shopping.</font></p>
-<button onclick="topFunction(20)" id="myBtn" title="Go to top">Top</button>
+(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+document.body.scrollTop = 0; // For Chrome, Safari and Opera 
